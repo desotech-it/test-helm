@@ -1,0 +1,41 @@
+apiVersion: v1
+entries:
+  wordpress:
+  - annotations:
+      category: CMS
+    apiVersion: v2
+    appVersion: 5.6.0
+    created: "2021-01-14T21:27:44.215495+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Custom wordpress application for training
+    digest: de9190e4c668b682fb2b982db88eb237ff8d3b5e4f703456c92ce137dce2f126
+    home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    - http://www.wordpress.com/
+    urls:
+    - wordpress-1.tgz
+    version: "1"
+generated: "2021-01-14T21:27:44.207796+01:00"
